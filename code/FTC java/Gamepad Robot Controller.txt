@@ -13,7 +13,7 @@ import com.qualcomm.hardware.modernrobotics.ModernRoboticsI2cColorSensor;
 
 public class gamepadController extends OpMode {
 
-    call hardwear
+    //call hardwear
     DcMotor MotorL;
     DcMotor MotorR;
     DcMotor wench;
@@ -52,10 +52,10 @@ public class gamepadController extends OpMode {
             fine = false;
         }
 
-       inputs
+       //inputs
        float rightTrig = gamepad1.right_trigger;
 
-       forward drive
+       //forward drive
        if (gamepad1.right_trigger = .01 && fine == false) {
            MotorR.setPower(gamepad1.right_trigger);
        } else {
@@ -69,7 +69,7 @@ public class gamepadController extends OpMode {
        }
 
 
-       fine drive
+       //fine drive
        if (gamepad1.right_trigger = .01 && fine == true) {
            MotorR.setPower(gamepad1.right_trigger2);
        } else {
@@ -82,7 +82,7 @@ public class gamepadController extends OpMode {
            MotorL.setPower(0);
        }
 
-       reverse
+       //reverse
        if (gamepad1.left_bumper == true) {
            MotorL.setPower(-.5);
        } else {
@@ -95,7 +95,7 @@ public class gamepadController extends OpMode {
            MotorR.setPower(0);
        }
 
-       arm
+       //arm
        if (gamepad1.right_stick_y  -0.001 ) {
            claw.setPower(-.75);
        }else{
@@ -107,7 +107,7 @@ public class gamepadController extends OpMode {
            claw.setPower(0);
        }
 
-       arm hook
+      // arm hook
        if(gamepad1.dpad_left == true){
            latchPosition = 0;
            latch.setPosition(latchPosition);
@@ -119,7 +119,7 @@ public class gamepadController extends OpMode {
        }
 
 
-        wench motor
+        //wench motor
        if (gamepad2.right_bumper == true ) {
            wench.setPower(-.75);
        }else{
@@ -132,7 +132,7 @@ public class gamepadController extends OpMode {
            wench.setPower(0);
        }
 
-       wench hook
+      // wench hook
        if(gamepad2.x== true){
            hookPosition = .5;
            hook.setPosition(hookPosition);
@@ -151,7 +151,7 @@ public class gamepadController extends OpMode {
 
 
 
-       float test
+      // float test
     telemetry.addData(right X,rightTrig);
 
    }
