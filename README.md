@@ -5,7 +5,7 @@ I developed these code snippets in highschool and have since then moved onto big
 - bash network hardware automation
 - automating alerting system
 - custom flask API’s 
-- My Upperclassmen friends home work
+- My Upperclassmen friends home work :laughing:
 - various custom exploitation tools used for CTF challenges.
 - React apps
 - and much more
