@@ -1,7 +1,6 @@
 #!/usr/bin/python3 
 import requests
 import json
-import os
 
 
 print("starting script ..")
@@ -16,7 +15,6 @@ url = f"https://api.darksky.net/forecast/{key}/{latitude},{longitude}?exclude=mi
 data = requests.get(url, json={"key": "value"})
 content = json.dumps((data.json()), sort_keys=True, indent=4)
 
-os.system("touch Weather.json")
 with open("./Weather.json","w") as fp:
     fp.write(content)
 
