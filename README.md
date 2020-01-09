@@ -3,9 +3,8 @@ I developed these code snippets in highschool and have since then moved onto big
 
 **a few things to expect:**
 - bash network hardware automation
-- automating alerting system
+- automating alerting system(weather, school assignments, reminders)
 - custom flask API’s 
-- My Upperclassmen friends home work :laughing:
 - various custom exploitation tools used for CTF challenges.
 - React apps
 - and much more
